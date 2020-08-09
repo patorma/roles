@@ -31,7 +31,7 @@ Route::middleware(['auth'])->group(function(){
 
      // visualizar listado 
       Route::get('roles','RoleController@index')->name('roles.index')
-      ->middleware('can:roles.index ');
+      ->middleware('can:roles.index');
 
      // ver formulario de creacion
       Route::get('roles/create','RoleController@create')->name('roles.create')
@@ -60,7 +60,7 @@ Route::middleware(['auth'])->group(function(){
 
      // visualizar listado 
       Route::get('products','ProductController@index')->name('products.index')
-      ->middleware('can:products.index ');
+      ->middleware('can:products.index');
 
      // ver formulario de creacion
       Route::get('products/create','ProductController@create')->name('products.create')
@@ -87,7 +87,7 @@ Route::middleware(['auth'])->group(function(){
   
        // visualizar listado 
         Route::get('users','UserController@index')->name('users.index')
-        ->middleware('can:users.index ');
+        ->middleware('can:users.index');
 
   
         // bactualizar
